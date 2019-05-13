@@ -1,0 +1,11 @@
+C:\Users\47218167829\Documents\Ex.Aplicativo\bin\Debug\netcoreapp2.1\Ex.Aplicativo.deps.json
+C:\Users\47218167829\Documents\Ex.Aplicativo\bin\Debug\netcoreapp2.1\Ex.Aplicativo.runtimeconfig.json
+C:\Users\47218167829\Documents\Ex.Aplicativo\bin\Debug\netcoreapp2.1\Ex.Aplicativo.runtimeconfig.dev.json
+C:\Users\47218167829\Documents\Ex.Aplicativo\bin\Debug\netcoreapp2.1\Ex.Aplicativo.dll
+C:\Users\47218167829\Documents\Ex.Aplicativo\bin\Debug\netcoreapp2.1\Ex.Aplicativo.pdb
+C:\Users\47218167829\Documents\Ex.Aplicativo\obj\Debug\netcoreapp2.1\Ex.Aplicativo.csprojAssemblyReference.cache
+C:\Users\47218167829\Documents\Ex.Aplicativo\obj\Debug\netcoreapp2.1\Ex.Aplicativo.csproj.CoreCompileInputs.cache
+C:\Users\47218167829\Documents\Ex.Aplicativo\obj\Debug\netcoreapp2.1\Ex.Aplicativo.AssemblyInfoInputs.cache
+C:\Users\47218167829\Documents\Ex.Aplicativo\obj\Debug\netcoreapp2.1\Ex.Aplicativo.AssemblyInfo.cs
+C:\Users\47218167829\Documents\Ex.Aplicativo\obj\Debug\netcoreapp2.1\Ex.Aplicativo.dll
+C:\Users\47218167829\Documents\Ex.Aplicativo\obj\Debug\netcoreapp2.1\Ex.Aplicativo.pdb

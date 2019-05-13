@@ -2,7 +2,7 @@ using System;
 
 namespace Ex.Aplicativo.Model
 {
-    public class UsuarioViewModel
+    public class UsuarioViewModel : BaseViewModel
     {
         public string Nome {get;set;}
         public string Email{get;set;}
