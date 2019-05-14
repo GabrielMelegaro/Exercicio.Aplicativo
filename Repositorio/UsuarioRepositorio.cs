@@ -16,19 +16,18 @@ namespace Ex.Aplicativo.Repositorio
                 
             }
             usuario.Id = contador + 1;
-            usuario.DataCriacao = DateTime.Now;
 
             //gera um arquivo CSV
 
             StreamWriter sw = new StreamWriter("usuarios.csv", true);
             
-            sw.WriteLine($"{usuario.Nome};{usuario.Email};{usuario.Senha};{usuario.DataCriacao}");
+            sw.WriteLine($"{usuario.Id};{usuario.Nome};{usuario.Email};{usuario.Senha};{usuario.DataCriacao}");
 
             sw.Close();
         
             return usuario;
         }
-        public List<UsuarioViewModel> Listar(){
+        public static List<UsuarioViewModel> Listar(){
             List<UsuarioViewModel> listaDeUsuarios = new List<UsuarioViewModel>();
             UsuarioViewModel usuario;
 
@@ -47,8 +46,24 @@ namespace Ex.Aplicativo.Repositorio
                     usuario.Email = dadosDoUsuario[2];
                     usuario.Senha = dadosDoUsuario[3];
                     usuario.DataCriacao = DateTime.Parse(dadosDoUsuario[4]);
+
+                    listaDeUsuarios.Add(usuario);
                 }
             }
+            return listaDeUsuarios;
+        }
+
+        public static UsuarioViewModel BuscarUsuario(string email, string senha){
+            List<UsuarioViewModel> listaDeUsuarios = Listar();
+
+            foreach(var item in listaDeUsuarios){
+                if(item != null){
+                    if(email.Equals(item.Email) && senha.Equals(item.Senha)){
+                        return item;
+                    }
+                }
+            }
+                return null;
         }
     }
 }

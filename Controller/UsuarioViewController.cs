@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Ex.Aplicativo.Model;
 using Ex.Aplicativo.Repositorio;
 
@@ -30,7 +31,18 @@ namespace Ex.Aplicativo.Controller
         
             Console.WriteLine($"{usuario.Nome} cadastrado com sucesso!");
         }//fim cadastrar usuario
-        public static LoginUsuario(){
+
+        public static void ListarUsuario(){
+            List<UsuarioViewModel> listaDeUsuarios = UsuarioRepositorio.Listar();
+
+            foreach (var item in listaDeUsuarios)
+            {
+                if(item != null){
+                    Console.WriteLine($"ID: {item.Id} - Nome: {item.Nome}");
+                    }
+                }
+            }//fim listarusuario
+        public static UsuarioViewModel LoginUsuario(){
             string email, senha;
 
             Console.WriteLine("Digite o email do usuario:");
